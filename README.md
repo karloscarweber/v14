@@ -1,6 +1,6 @@
-# KOWFM v12
+# KOWFM v14
 
-This is the twelfth version of kowfm.
+This is the fourtheenth version of kowfm.
 
 To Do
 
