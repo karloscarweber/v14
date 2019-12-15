@@ -1,0 +1,14 @@
+<article class="clearfix dapost-card text-block {{post_class}}{{#unless feature_image}} no-image{{/unless}} ">
+  <a href="{{url}}"><h1 class="f1 lh-title f1-m lh-title-m f1-l lh-title-l fw9">{{title}}</h1></a>
+  <!--
+  {{#if feature_image}}
+      <a class="image-link" href="{{url}}">
+          <img src="{{feature_image}}" alt="">
+      </a>
+  {{/if}}
+-->
+    <!-- <span class="date-time" datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMMM D YYYY"}}</span> -->
+    <p class="fw5 f3 lh-copy">{{excerpt words="16"}}<a class="content-link" href="{{url}}">Read more</a></p>
+
+    <div class="clearfix"></div>
+</article>

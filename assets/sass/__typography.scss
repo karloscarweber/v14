@@ -1,0 +1,409 @@
+/*
+  Typography.css
+*/
+
+/* TypeFace */
+/*
+  400 regular
+  500 medium
+  600 demi-bold
+  700 bold
+  900 heavy
+*/
+@font-face {
+  font-family: "GreycliffCF";
+  src: url("/assets/fonts/greycliff/GreycliffCF-Regular.eot"); /* IE9 Compat Mode */
+  src: url("/assets/fonts/greycliff/GreycliffCF-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/greycliff/GreycliffCF-Regular.woff2") format("woff2"),
+    url("/assets/fonts/greycliff/GreycliffCF-Regular.woff") format("woff"),
+    url("/assets/fonts/greycliff/GreycliffCF-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GreycliffCF";
+  src: url("/assets/fonts/greycliff/GreycliffCF-RegularOblique.eot"); /* IE9 Compat Mode */
+  src: url("/assets/fonts/greycliff/GreycliffCF-RegularOblique.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/greycliff/GreycliffCF-RegularOblique.woff2")
+      format("woff2"),
+    url("/assets/fonts/greycliff/GreycliffCF-RegularOblique.woff") format("woff"),
+    url("/assets/fonts/greycliff/GreycliffCF-RegularOblique.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "GreycliffCF";
+  src: url("/assets/fonts/greycliff/GreycliffCF-Medium.eot"); /* IE9 Compat Mode */
+  src: url("/assets/fonts/greycliff/GreycliffCF-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/greycliff/GreycliffCF-Medium.woff2") format("woff2"),
+    url("/assets/fonts/greycliff/GreycliffCF-Medium.woff") format("woff"),
+    url("/assets/fonts/greycliff/GreycliffCF-Medium.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GreycliffCF";
+  src: url("/assets/fonts/greycliff/GreycliffCF-MediumOblique.eot"); /* IE9 Compat Mode */
+  src: url("/assets/fonts/greycliff/GreycliffCF-MediumOblique.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/greycliff/GreycliffCF-MediumOblique.woff2")
+      format("woff2"),
+    url("/assets/fonts/greycliff/GreycliffCF-MediumOblique.woff") format("woff"),
+    url("/assets/fonts/greycliff/GreycliffCF-MediumOblique.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "GreycliffCF";
+  src: url("/assets/fonts/greycliff/GreycliffCF-DemiBold.eot"); /* IE9 Compat Mode */
+  src: url("/assets/fonts/greycliff/GreycliffCF-DemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/greycliff/GreycliffCF-DemiBold.woff2") format("woff2"),
+    url("/assets/fonts/greycliff/GreycliffCF-DemiBold.woff") format("woff"),
+    url("/assets/fonts/greycliff/GreycliffCF-DemiBold.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GreycliffCF";
+  src: url("/assets/fonts/greycliff/GreycliffCF-DemiBoldOblique.eot"); /* IE9 Compat Mode */
+  src: url("/assets/fonts/greycliff/GreycliffCF-DemiBoldOblique.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/greycliff/GreycliffCF-DemiBoldOblique.woff2")
+      format("woff2"),
+    url("/assets/fonts/greycliff/GreycliffCF-DemiBoldOblique.woff") format("woff"),
+    url("/assets/fonts/greycliff/GreycliffCF-DemiBoldOblique.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "GreycliffCF";
+  src: url("/assets/fonts/greycliff/GreycliffCF-Bold.eot"); /* IE9 Compat Mode */
+  src: url("/assets/fonts/greycliff/GreycliffCF-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/greycliff/GreycliffCF-Bold.woff2") format("woff2"),
+    url("/assets/fonts/greycliff/GreycliffCF-Bold.woff") format("woff"),
+    url("/assets/fonts/greycliff/GreycliffCF-Bold.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GreycliffCF";
+  src: url("/assets/fonts/greycliff/GreycliffCF-BoldOblique.eot"); /* IE9 Compat Mode */
+  src: url("/assets/fonts/greycliff/GreycliffCF-BoldOblique.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/greycliff/GreycliffCF-BoldOblique.woff2") format("woff2"),
+    url("/assets/fonts/greycliff/GreycliffCF-BoldOblique.woff") format("woff"),
+    url("/assets/fonts/greycliff/GreycliffCF-BoldOblique.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GreycliffCF";
+  src: url("/assets/fonts/greycliff/GreycliffCF-Heavy.eot"); /* IE9 Compat Mode */
+  src: url("/assets/fonts/greycliff/GreycliffCF-Heavy.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/greycliff/GreycliffCF-Heavy.woff2") format("woff2"),
+    url("/assets/fonts/greycliff/GreycliffCF-Heavy.woff") format("woff"),
+    url("/assets/fonts/greycliff/GreycliffCF-Heavy.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GreycliffCF";
+  src: url("/assets/fonts/greycliff/GreycliffCF-HeavyOblique.eot"); /* IE9 Compat Mode */
+  src: url("/assets/fonts/greycliff/GreycliffCF-HeavyOblique.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/greycliff/GreycliffCF-HeavyOblique.woff2") format("woff2"),
+    url("/assets/fonts/greycliff/GreycliffCF-HeavyOblique.woff") format("woff"),
+    url("/assets/fonts/greycliff/GreycliffCF-HeavyOblique.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "PlayfairDisplay-Black";
+  src: url("/assets/fonts/playfair/PlayfairDisplay-Black.eot"); /* IE9 Compat Modes */
+  src: url("/assets/fonts/playfair/PlayfairDisplay-Black.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/assets/fonts/playfair/PlayfairDisplay-Black.otf") format("opentype"), /* Open Type Font */
+    url("/assets/fonts/playfair/PlayfairDisplay-Black.svg") format("svg"), /* Legacy iOS */
+    url("/assets/fonts/playfair/PlayfairDisplay-Black.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("/assets/fonts/playfair/PlayfairDisplay-Black.woff") format("woff"), /* Modern Browsers */
+    url("/assets/fonts/playfair/PlayfairDisplay-Black.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "PlayfairDisplay-Black";
+  src: url("/assets/fonts/playfair/PlayfairDisplay-BlackItalic.eot"); /* IE9 Compat Modes */
+  src: url("/assets/fonts/playfair/PlayfairDisplay-BlackItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/assets/fonts/playfair/PlayfairDisplay-BlackItalic.otf") format("opentype"), /* Open Type Font */
+    url("/assets/fonts/playfair/PlayfairDisplay-BlackItalic.svg") format("svg"), /* Legacy iOS */
+    url("/assets/fonts/playfair/PlayfairDisplay-BlackItalic.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("/assets/fonts/playfair/PlayfairDisplay-BlackItalic.woff") format("woff"), /* Modern Browsers */
+    url("/assets/fonts/playfair/PlayfairDisplay-BlackItalic.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Futura";
+  src: url("/assets/fonts/futura/futura.eot"); /* IE9 Compat Modes */
+  src: url("/assets/fonts/futura/futura.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/assets/fonts/futura/futura.otf") format("opentype"), /* Open Type Font */
+    url("/assets/fonts/futura/futura.svg") format("svg"), /* Legacy iOS */
+    url("/assets/fonts/futura/futura.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("/assets/fonts/futura/futura.woff") format("woff"), /* Modern Browsers */
+    url("/assets/fonts/futura/futura.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Setting a standard typeface
+@mixin tf-greycliff { font-family: 'GreycliffCF', Helvetica, sans-serif; }
+.tf-greycliff { @include tf-greycliff; }
+
+/* Random ass stuff */
+@custom-media --crazy-viewport (min-width: 62em);
+.blue-container {
+  background: var(--color-blue);
+}
+@media (--crazy-viewport) {
+  .blue-container {
+    background: var(--color-pink);
+    .green {
+      color: green;
+    }
+  }
+}
+
+// text styling and stuff
+body {
+  font-size: 16px;
+}
+
+.f-64 { font-size: 4rem;}     //64px
+.f-48 { font-size: 3rem;}     // 48px
+.f-24 { font-size: 1.5rem;}   // 24px
+.f-18 { font-size: 1.125rem;} // 18px
+.f-16 { font-size: 1rem;}     // 16px
+.f-14 { font-size: 0.875rem;} // 14px
+
+.lh-64 { line-height: 4rem;}
+.lh-48 { line-height: 3rem;}
+.lh-24 { line-height: 1.5rem;}
+.lh-18 { line-height: 1.125rem;}
+.lh-16 { line-height: 1rem;}
+.lh-14 { line-height: 0.875rem;}
+.lh-225 { line-height:  2.25rem;}
+
+@media screen and (min-width: 37.5em) {/* -ns */
+  .f-64-ns { font-size: 4rem;}     //64px
+  .f-48-ns { font-size: 3rem;}     // 48px
+  .f-24-ns { font-size: 1.5rem;}   // 24px
+  .f-18-ns { font-size: 1.125rem;} // 18px
+  .f-16-ns { font-size: 1rem;}     // 16px
+  .f-14-ns { font-size: 0.875rem;} // 14px
+
+  .lh-64-ns { line-height: 4rem;}
+  .lh-48-ns { line-height: 3rem;}
+  .lh-24-ns { line-height: 1.5rem;}
+  .lh-18-ns { line-height: 1.125rem;}
+  .lh-16-ns { line-height: 1rem;}
+  .lh-14-ns { line-height: 0.875rem;}
+  .lh-225-ns { line-height:  2.25rem;}
+}
+@media (min-width: 37.5em) and (max-width: 60em) {/* -m */
+  .f-64-m { font-size: 4rem;}     //64px
+  .f-48-m { font-size: 3rem;}     // 48px
+  .f-24-m { font-size: 1.5rem;}   // 24px
+  .f-18-m { font-size: 1.125rem;} // 18px
+  .f-16-m { font-size: 1rem;}     // 16px
+  .f-14-m { font-size: 0.875rem;} // 14px
+
+  .lh-64-m { line-height: 4rem;}
+  .lh-48-m { line-height: 3rem;}
+  .lh-24-m { line-height: 1.5rem;}
+  .lh-18-m { line-height: 1.125rem;}
+  .lh-16-m { line-height: 1rem;}
+  .lh-14-m { line-height: 0.875rem;}
+  .lh-225-m { line-height:  2.25rem;}
+}
+@media (min-width: 60em) {/* -l */
+  .f-64-l { font-size: 4rem;}     //64px
+  .f-48-l { font-size: 3rem;}     // 48px
+  .f-24-l { font-size: 1.5rem;}   // 24px
+  .f-18-l { font-size: 1.125rem;} // 18px
+  .f-16-l { font-size: 1rem;}     // 16px
+  .f-14-l { font-size: 0.875rem;} // 14px
+
+  .lh-64-l { line-height: 4rem;}
+  .lh-48-l { line-height: 3rem;}
+  .lh-24-l { line-height: 1.5rem;}
+  .lh-18-l { line-height: 1.125rem;}
+  .lh-16-l { line-height: 1rem;}
+  .lh-14-l { line-height: 0.875rem;}
+  .lh-225-l { line-height:  2.25rem;}
+}
+
+
+/* TYPOGRAPHY */
+@mixin f-64    { font-size: 4rem; }        .f-64      { @include f-64; } // 64px
+@mixin f-48    { font-size: 3rem; }        .f-48      { @include f-48; } // 48px
+@mixin f-36    { font-size: 2.25rem; }     .f-36      { @include f-36; } // 36px
+@mixin f-32    { font-size: 2rem; }        .f-32      { @include f-32; } // 32px
+@mixin f-24    { font-size: 1.5rem; }      .f-24      { @include f-24; } // 24px
+@mixin f-20    { font-size: 1.25rem; }     .f-20      { @include f-20; } // 20px
+@mixin f-18    { font-size: 1.125rem; }    .f-18      { @include f-18; } // 18px
+@mixin f-16    { font-size: 1rem; }        .f-16      { @include f-16; } // 16px
+@mixin f-14    { font-size: 0.875rem; }    .f-14      { @include f-14; } // 14px
+@mixin lh-64   { line-height: 4rem; }      .lh-64     { @include lh-64; } // 64px
+@mixin lh-48   { line-height: 3rem; }      .lh-48     { @include lh-48; } // 48px
+@mixin lh-36   { line-height: 2.25rem; }   .lh-36     { @include lh-36; } // 36px
+@mixin lh-32   { line-height: 2rem; }      .lh-32     { @include lh-32; } // 32px
+@mixin lh-24   { line-height: 1.5rem; }    .lh-24     { @include lh-24; } // 24px
+@mixin lh-18   { line-height: 1.125rem; }  .lh-18     { @include lh-18; } // 18px
+@mixin lh-16   { line-height: 1rem; }      .lh-16     { @include lh-16; } // 16px
+@mixin lh-14   { line-height: 0.875rem; }  .lh-14     { @include lh-14; } // 14px
+
+.text-block h1 { @include f-36; @include lh-36; margin-bottom: 0.25em; margin-top: 1em; }
+.text-block h2 { @include f-24; @include lh-32; margin-bottom: 0.25em; margin-top: 1em; }
+.text-block h3 { @include f-20; @include lh-32; margin-bottom: 0.25em; margin-top: 1em; }
+.text-block h4 { @include f-18; @include lh-24; margin-bottom: 0.25em; margin-top: 1em; }
+.text-block h5 { @include f-18; @include lh-24; margin-bottom: 0.25em; margin-top: 1em; }
+.text-block h1, .text-block h2, .text-block h3 { font-weight: 900; text-transform: uppercase;}
+.text-block h4, .text-block h5 { font-weight: 700; }
+
+.text-block { @include tf-greycliff; color: #333; }
+
+.text-block p, .text-block code, .text-block pre, .text-block ul, .text-block li {
+  @include f-18;
+  @include lh-32;
+  font-weight: 500;
+  margin-bottom: 32px;
+  margin-top: 0.5em;
+  margin-block-start: 0.5em;
+  max-width: 736px;
+}
+.text-block blockquote, .text-block blockquote * {
+  @include f-24;
+  @include lh-32;
+  font-family: 'PlayfairDisplay-Black', Arial, serif;
+  margin: 32px 0px;
+  margin-bottom: 32px;
+  max-width: 736px;
+  font-style:italic;
+  color: var(--neon-pink);
+}
+// .text-block a { @include f-24; @include lh-36; max-width: 736px; }
+.text-block li {
+  margin-bottom: 0.875rem;
+}
+.text-block strong {
+  font-weight: 700;
+}
+.text-block em {
+  font-style: italic;
+}
+
+.text-block img {
+  margin: 0px auto 32px;
+  max-width: 640px;
+  width: 100%;
+}
+.text-block code {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+
+@media screen and (min-width: 37.5em) {
+  .text-block h1 { @include f-48; @include lh-48; }
+  .text-block h2 { @include f-36; @include lh-36; }
+  .text-block h3 { @include f-32; @include lh-32; }
+  .text-block h4 { @include f-24; @include lh-32; }
+  .text-block h5 { @include f-24; @include lh-32; }
+
+  .text-block p, .text-block blockquote, .text-block code, .text-block pre, .text-block ul, .text-block li {
+    @include f-20;
+    @include lh-36;
+  }
+  .text-block li {
+    margin-bottom: 0.875rem;
+  }
+
+  .text-block blockquote, .text-block blockquote * {
+    @include f-24; @include lh-32;
+    margin: 32px 0px;
+  }
+  .text-block img {
+    margin: 0px auto 32px;
+    max-width: 640px;
+    width: 100%;
+  }
+
+  .page-designportfolio .text-block figure {
+    margin: 32px auto 16px;
+  }
+
+  .page-designportfolio .text-block figure + p {
+    margin-top: 0px;
+  }
+
+  .page-designportfolio .text-block img {
+    margin: 0px;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 37.5em) and (max-width: 60em) {
+  .text-block h1 { @include f-48; @include lh-48; }
+  .text-block h2 { @include f-36; @include lh-36; }
+  .text-block h3 { @include f-32; @include lh-32; }
+  .text-block h4 { @include f-24; @include lh-32; }
+  .text-block h5 { @include f-24; @include lh-32; }
+
+  .text-block p, .text-block code, .text-block pre, .text-block ul, .text-block li {
+    @include f-20; @include lh-32;
+    max-width: 736px;
+  }
+  .text-block blockquote, .text-block blockquote * {
+    @include f-32; @include lh-48;
+    margin: 32px 0px;
+    margin-bottom: 32px;
+    max-width: 736px;
+  }
+
+}
+
+@media screen and (min-width: 60em) {
+  .text-block h1 { @include f-64; @include lh-64; }
+  .text-block h2 { @include f-48; @include lh-48; }
+  .text-block h3 { @include f-36; @include lh-36; }
+  .text-block h4 { @include f-32; @include lh-32; }
+  .text-block h5 { @include f-32; @include lh-32; }
+
+  .text-block p, .text-block code, .text-block pre, .text-block ul, .text-block li {
+    @include f-20; @include lh-32;
+    max-width: 736px;
+  }
+  .text-block blockquote, .text-block blockquote * {
+    @include f-36; @include lh-48;
+    margin: 32px 0px;
+    margin-bottom: 32px;
+    max-width: 736px;
+  }
+
+}
+
+//
+// @custom-media --breakpoint-new-medium screen and (min-width: 37.5em) and (max-width: 60em);
+// @custom-media --breakpoint-new-large screen and (min-width: 60em);

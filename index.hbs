@@ -1,0 +1,28 @@
+{{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+
+<div class="supercontainer green-bg cf">
+  <div style="height:128px;display:block;position:relative;width:100%;">&nbsp;</div>
+  <div class="ng-c clearfix">
+    {{> "site-nav"}}
+  </div>
+  <div class="ng-c clearfix">
+    <div class="ng-6c mt5">
+      <em><h1 class="header-text large green">Stories</h1></em>
+      {{#foreach posts}}
+
+          {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+          {{> "post-card"}}
+
+      {{/foreach}}
+      {{pagination}}
+    </div>
+    <div class="ng-6c mt7 mb7">
+      <div class="logo-hr">
+        <div class="wing"></div>
+        <div class="logo"></div>
+      </div>
+    </div>
+  </div>
+</div>

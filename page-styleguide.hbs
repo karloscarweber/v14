@@ -1,0 +1,185 @@
+{{!< blank-layout}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+
+{{!-- Everything inside the #post tags pulls data from the post --}}
+{{#post}}
+<div class="supercontainer super white-bg cf">
+  <div class="supercontainer white-bg cf">
+    <div class="ng-c">
+      <div class="ng-6c ng-5c-m ng-3c-l mt6">
+        <h1 class="header-text large green mb5">StyleGuide</h1>
+        <div class="standard-text mb5">
+          <p>Yeah so this is the Style and Component Guide for the website. Hopefully it makes sense and is good.</p>
+          <p>I use Tachyons to style almost everything. There are descendent components that inherit from Tachyons and these are what most of this document is about. The choices I've made to standardize development on the website are, alright. I think they could be better.</p>
+        </div>
+      </div>
+    </div>
+    <div class="ng-c">
+      <div class="ng-6c mt6">
+        <h2 class="header-text large green mb5">Typography</h2>
+
+        <h2 class="f5 b mv4 mt5-ns">Font sizes</h2>
+
+        <div class="w-100 overflow-x-auto">
+          <table>
+            <tbody><tr>
+              <td class="tf-greycliff tc f-headline b br b--black-10 v-base">A</td>
+              <td class="tf-greycliff tc ph2 br f-subheadline b br b--black-10 v-base">A</td>
+              <td class="tf-greycliff tc f-64 b br b--black-10 v-base">A</td>
+              <td class="tf-greycliff tc f1 b br b--black-10 v-base">A</td>
+              <td class="tf-greycliff tc f2 b br b--black-10 v-base">A</td>
+              <td class="tf-greycliff tc f3 b br b--black-10 v-base">A</td>
+              <td class="tf-greycliff tc f4 b br b--black-10 v-base">A</td>
+              <td class="tf-greycliff tc f5 b br b--black-10 v-base">A</td>
+              <td class="tf-greycliff tc f6 b b--black-10 v-base">A</td>
+            </tr>
+            <tr>
+              <td class="tf-greycliff tc gray f6 fw2 pr2 bt br b--black-10 pt1">6rem (96px)</td>
+              <td class="tf-greycliff tc gray f6 fw2 ph2 bt br b--black-10 pt1">5rem (80px)</td>
+              <td class="tf-greycliff tc gray f6 fw2 ph2 bt br b--black-10 pt1">4rem (64px)</td>
+              <td class="tf-greycliff tc gray f6 fw2 ph2 bt br b--black-10 pt1">3rem (48px)</td>
+              <td class="tf-greycliff tc gray f6 fw2 ph2 bt br b--black-10 pt1">2.25rem (36px)</td>
+              <td class="tf-greycliff tc gray f6 fw2 ph2 bt br b--black-10 pt1">1.5rem (24px)</td>
+              <td class="tf-greycliff tc gray f6 fw2 ph2 bt br b--black-10 pt1">1.25rem (20px)</td>
+              <td class="tf-greycliff tc gray f6 fw2 ph2 bt br b--black-10 pt1">1rem (16px)</td>
+              <td class="tf-greycliff tc gray f6 fw2 pl2 bt b--black-10 pt1">.875rem (14px)</td>
+            </tr>
+          </tbody></table>
+        </div>
+
+
+        <h3 class="f5 mb4 mb5-ns mt5 mt6-ns pb2 bb">Examples</h3>
+
+        <code class="f6 mb3 db"> &lt;h1 class="tf-greycliff f-headline lh-solid"&gt;Title&lt;/h1&gt; </code>
+        <h1 class="tf-greycliff f-headline b lh-solid oh measure mt0 mb5 ws-normal-ns"> A modular scale, like a musical scale, is a prearranged set of harmonious proportions. </h1>
+
+        <code class="f6 mb3 db"> &lt;h1 class="tf-greycliff f-subheadline lh-title"&gt;Title&lt;/h1&gt; </code>
+        <h1 class="tf-greycliff f-subheadline b lh-title oh measure mt0 mb5 ws-normal-ns"> A modular scale, like a musical scale, is a prearranged set of harmonious proportions. </h1>
+
+        <code class="f6 mb3 db"> &lt;h1 class="tf-greycliff f1 lh-title"&gt;Title&lt;/h1&gt; </code>
+        <h1 class="tf-greycliff f1 b lh-title oh measure mt0 mb5 ws-normal-ns"> A modular scale, like a musical scale, is a prearranged set of harmonious proportions. </h1>
+
+        <code class="f6 mb3 db"> &lt;h1 class="tf-greycliff f2 lh-copy"&gt;Title&lt;/h1&gt; </code>
+        <h1 class="tf-greycliff f2 b lh-copy oh measure mt0 mb5 ws-normal-ns"> A modular scale, like a musical scale, is a prearranged set of harmonious proportions. </h1>
+
+        <code class="f6 mb3 db"> &lt;h1 class="tf-greycliff f3 lh-copy"&gt;Title&lt;/h1&gt; </code>
+        <h1 class="tf-greycliff f3 b lh-copy oh measure mt0 mb5 ws-normal-ns"> A modular scale, like a musical scale, is a prearranged set of harmonious proportions. </h1>
+
+        <code class="f6 mb3 db"> &lt;h1 class="tf-greycliff f4 lh-copy"&gt;Title&lt;/h1&gt; </code>
+        <h1 class="tf-greycliff f4 b lh-copy oh measure mt0 mb5 ws-normal-ns"> A modular scale, like a musical scale, is a prearranged set of harmonious proportions. </h1>
+
+        <code class="f6 mb3 db"> &lt;h1 class="tf-greycliff f5 lh-copy"&gt;Title&lt;/h1&gt; </code>
+        <h1 class="tf-greycliff f5 b lh-copy oh measure mt0 mb5 ws-normal-ns"> A modular scale, like a musical scale, is a prearranged set of harmonious proportions. </h1>
+
+
+        <h2 class="header-text large green mb5">Component Examples</h2>
+
+        <p class="standard-text">These are things we are actually using and the way that we're using them.</p>
+
+        <h3 class="f5 mb4 mb5-ns mt5 mt6-ns pb2 bb">Examples</h3>
+
+        <code class="f6 mb3 db"> &lt;h1 class="tf-greycliff f-64 lh-64"&gt;Page Heading&lt;/h1&gt; </code>
+        <h1 class="tf-greycliff f-64-ns lh-64-ns f-48 lh-48 b oh measure mt0 mb5 ws-normal-ns">This is a page heading. It gets smaller on tablets and phones.</h1>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="supercontainer white-bg cf">
+    <div class="vertibar ancillary parallaxy-animate" parallaxy-options='{"multiplier":"0.10", "direction":"down", "positionType": "absolute", "rotation": "rotate(-45deg)"}'>
+      <div class="top green"></div>
+      <div class="bottom green"></div>
+    </div>
+    <div class="vertibar supra parallaxy-animate offset0" parallaxy-options='{"multiplier":"0.85", "direction":"down", "positionType": "absolute", "rotation": "rotate(-45deg)"}'>
+      <div class="top green"></div>
+      <div class="bottom green"></div>
+    </div>
+    <h2 class="supertext parallaxy-animate " parallaxy-options='{"multiplier":"0.20", "direction":"down", "positionType": "absolute", "rotation": "rotate(90deg)"}'>EPICURRENCE</h2>
+
+    <div class="ng-c">
+      <div class="ng-6c mt6 mb6">
+        <img src="{{asset "images/portfolio/epicurrence3-001.jpg"}}"  class="portfolio unsullied enlarged-when-small" alt="">
+      </div>
+      <div class="standard-text center ng-6c ng-5c-m ng-4c-l mb6" >
+        <p>A couple of years ago I had the great opportunity to work at one of the best design and development agencies in the world, <span class="rally">RALLY</span>. Since then everything has been pretty awesome. I’ve been freelancing and making bank on my own. I built the Epicurrence 3 site and it won an award so I think that’s pretty neat. Ben Cline was the designer and the project and it was pretty much just He and I the whole way.</p>
+
+        <p>The Epicurrence 3 Site took us a couple of months. It went through an extensive ideation and experimentation process unlike anything I’ve done since. We spent time experimenting with various canvas based animations recreating seismic waves recorded by seismometers, and lots of creepy rotating and expanding polygons. We settled on simple parallax motion and custom filtered type.</p>
+      </div>
+      <div class="ng-6c mb6">
+        <img src="{{asset "images/portfolio/epicurrence3-002.jpg"}}"  class="portfolio unsullied enlarged-when-small" alt="">
+      </div>
+      <div class="standard-text center ng-6c ng-5c-m ng-4c-l mb6">
+        <p>Animating things in HTML Canvas wasn’t new back then, but the tools were far from mature. I had to learn about the Canvas draw process, how to clear an image buffer, and how to make an actual canvas animation work. I eventually achieved something similar to what you might see on a seismograph.</p>
+
+        <p>I also did a lot of experimentation with animating and rotating polygons on Canvas. My favorite test from that age is called creepy triangle, and, as you could tell, was creepy. Ultimately these tests didn’t go anywhere and we moved on. Ben made an offhand comment about color filters and I began researching.</p>
+      </div>
+
+      <div class="fl ng-6c ng-3c-m ng-3c-l mb5">
+        <img src="{{asset "images/portfolio/epicurrence3-005.jpg"}}"  class="portfolio" alt="">
+      </div>
+      <div class="fl ng-6c ng-3c-m ng-3c-l mb5">
+
+        <img src="{{asset "images/portfolio/epicurrence3-004.jpg"}}"  class="portfolio" alt="">
+      </div>
+
+      <div class="standard-text center ng-6c ng-5c-m ng-4c-l mb6">
+        <p>Deciding to use CSS Blend modes was, in my opinion, key to the final design that we built. CSS blend modes were new back then, and I hadn’t really seen it used anywhere, but they worked like a charm across most browsers so we made BIG text float independently over the website with the ‘multiply’ CSS Blend Mode applied. It gives everything a nice GREEN filter that it comes into contact with.</p>
+
+        <p>By this time we were approaching the deadline for delivering the site. The Front End was great, but the back end was also important. There was a big push to include women and under represented groups more prominently at the conference. Epicurrence is invite only, but people are encouraged to apply and the bulk of attendees are drawn from those that applied.</p>
+      </div>
+
+
+      <div class="center ng-6c ng-4c-m ng-4c-l mb5">
+        <img src="{{asset "images/portfolio/epicurrence3-003.jpg"}}"  class="portfolio unsullied" alt="">
+      </div>
+
+      <div class="ng-6c ng-5c-m ng-4c-l center standard-text cf">
+        <p>I built a system to collect all of the essential information for an applicant: Name, Email, Twitter handle, and Gender (Male, Female, and Other. Nobody was paying attention to non-binary folks back then). The website actually has a backend system with a simple table view of everyone that’s applied and what percentage of them are women. It was a subtle tool to help Dann be mindful about the numbers behind his goal to be inclusive. I think it worked.</p>
+
+        <p>When applicants are officially invited they receive an email with a unique invite code and a link to buy a ticket. The ticket system was built on Stripe and express.js. It was my first project in Node and I was very grateful to have the opportunity to choose which tech stack to use for the project. </p>
+
+        <p>The Epicurrence Site launched in 2015, and it was fantastic.</p>
+      </div>
+      <div class="ng-6c mt7 mb7">
+        <div class="logo-hr">
+          <div class="wing"></div>
+          <div class="logo"></div>
+        </div>
+      </div>
+    </div>
+    <div class="ng-c">
+      <div class="ng-6c ng-5c-m ng-4c-l mt6 mb7">
+        <h2 class="header-text green mb5">If you need some help making astonishing websites, Hit me up.</h2>
+        <div class="standard-text mb5">
+          <p>I’m open to new web projects and would love to be booked BEFORE september ends.</p>
+
+          <p>To get in Contact please email <a href="mailto:me@kow.fm" target="_blank">me@kow.fm</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{/post}}
+
+{{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
+{{#contentFor "scripts"}}
+<script type="text/javascript" src="{{asset "js/classie.js"}}"></script>
+<script type="text/javascript" src="{{asset "js/parallaxative.js"}}"></script>
+<script type="text/javascript">
+  scrollyscroll = function() {
+    parallaxController.scrollHandler();
+    window.requestAnimationFrame( scrollyscroll );
+  }
+  scrollyscroll();
+
+  // control the mobile menu real simply
+  // var menubutton = document.getElementById('menubutton');
+  // var mobilemenu = document.getElementById('mobilemenu');
+
+  // menubutton.addEventListener('click', function(){
+  //   classie.toggle( menubutton, 'close' )
+  //   classie.toggle( mobilemenu, 'visible' )
+  // });
+</script>
+{{/contentFor}}

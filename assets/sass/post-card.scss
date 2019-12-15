@@ -1,0 +1,29 @@
+/*
+  Post-Card
+  All of the styles for the post-card, it's the summary of a post that appears
+  in the index pages.
+
+  markup:
+
+  <div class="post-card ng-c {{post_class}}{{#unless feature_image}} no-image{{/unless}}">
+    <div class="ng-4c">
+      <div class="ng-2c">
+      {{#if feature_image}}
+          <a class="image-link" href="{{url}}">
+              <img src="{{feature_image}}" alt="">
+          </a>
+      {{^}}
+        &nbsp;
+      {{/if}}
+      </div>
+      <div class="ng-2c">
+        <h2 class="">A NEW PORTFOLIO, WELL PART OF IT.</h2>
+        <p>I’ve been working on a LOT of new stuff, but today I’m posting a new portfolio. It’s half done, and will probably change, but for now I’m ready to share it.</p>
+        <p><a href="/posts/thepost"></a></p>
+      </div>
+    </div>
+  </div>
+
+*/
+
+.post-card {}
