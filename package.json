@@ -30,10 +30,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/karloscarweber/kowfm.git"
+    "url": "https://github.com/karloscarweber/v14.git"
   },
-  "bugs": "https://github.com/karloscarweber/kowfm/issues",
-  "contributors": "https://github.com/karloscarweber/kowfm/graphs/contributors",
+  "bugs": "https://github.com/karloscarweber/v14/issues",
+  "contributors": "https://github.com/karloscarweber/v14/graphs/contributors",
   "devDependencies": {
     "autoprefixer": "6.3.6",
     "cssnano": "3.7.1",

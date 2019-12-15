@@ -18,12 +18,11 @@ To Do
 * [x] Freelance Page Layout
 * [x] Footer Layout
 * [ ] Collapsible Menu - abandonded
-* [ ] Portfolio Page
+* [x] Portfolio Page
 * [x] Responsive Polish
 * [ ] Official Screenshots
 * [ ] SVG Social icons
 * [ ] Tachyons refactor (refactor styles to be utility class based)
-* [ ] Rewrite Gulp config to make it easier for others to use the Theme
 * [ ] Rewrite Readme to reflect the actual theme
 * [ ] Light/Dark Theme
 
