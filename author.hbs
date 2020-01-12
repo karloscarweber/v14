@@ -1,54 +1,59 @@
 {{!< default}}
 {{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
-
-{{#author}}
-{{!-- Everything inside the #author tags pulls data from the author --}}
-<header class="site-header outer {{#if cover_image}}" style="background-image: url({{cover_image}}){{else}}no-cover{{/if}}">
-    <div class="inner">
-        {{> "site-nav"}}
-        <div class="site-header-content">
-            {{#if profile_image}}
-                <img class="author-profile-image" src="{{profile_image}}" alt="{{name}}" />
-            {{/if}}
-            <h1 class="site-title">{{name}}</h1>
-            {{#if bio}}
-                <h2 class="author-bio">{{bio}}</h2>
-            {{/if}}
-            <div class="author-meta">
-                {{#if location}}
-                    <div class="author-location">{{location}} <span class="bull">&bull;</span></div>
-                {{/if}}
-                <div class="author-stats">
-                    {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}} <span class="bull">&bull;</span>
-                </div>
-                {{#if website}}
-                    <a class="social-link social-link-wb" href="{{website}}" target="_blank" rel="noopener">{{> "icons/website"}}</a>
-                {{/if}}
-                {{#if twitter}}
-                    <a class="social-link social-link-tw" href="{{twitter_url}}" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
-                {{/if}}
-                {{#if facebook}}
-                    <a class="social-link social-link-fb" href="{{facebook_url}}" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
-                {{/if}}
-                <a class="social-link social-link-rss" href="http://cloud.feedly.com/#subscription/feed/{{url absolute="true"}}/rss/" target="_blank" rel="noopener">{{> "icons/rss"}}</a>
-            </div>
+<div class="ng-c">
+  <div class="ng-6c">
+  {{> "site-nav"}}
+  </div>
+  <div class="ng-6c ng-4c-ns">
+  {{#author}}
+  {{!-- Everything inside the #author tags pulls data from the author --}}
+      <div class="author-block tf-greycliff">
+        <div class="clearfix">
+          {{#if profile_image}}
+              <img class="author-profile-image" src="{{profile_image}}" alt="{{name}}" />
+          {{/if}}
+          <h1 class="author-name">{{name}}</h1><br />
+          <p class="author-subname">Author</p><br />
         </div>
+        {{#if bio}}
+            <p class="author-bio">{{bio}}</p><br>
+        {{/if}}
+        <p class="author-meta">
+          {{#if location}}
+              From: <span class="author-location">{{location}}, </span>
+          {{/if}}
+          <span class="author-stats">
+              {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}},
+          </span>
+          {{#if website}}
+              web: <a class="social-link social-link-wb" href="{{website}}" target="_blank" rel="noopener">{{website}}</a>,
+          {{/if}}
+          {{#if twitter}}
+              tweets: <a class="social-link social-link-tw" href="{{twitter_url}}" target="_blank" rel="noopener">{{twitter}}</a>,
+          {{/if}}
+
+          <a class="social-link social-link-rss" href="http://cloud.feedly.com/#subscription/feed/{{url absolute="true"}}/rss/" target="_blank" rel="noopener">rss</a>
+        </p>
+      </div>
+  {{/author}}
+  </div>
+</div>
+
+<div class="ng-c clearfix">
+  <div class="ng-6c mt5">
+    <em><h1 class="header-text large green">Stories</h1></em>
+    {{#foreach posts}}
+
+        {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+        {{> "post-card"}}
+
+    {{/foreach}}
+    {{pagination}}
+  </div>
+  <div class="ng-6c mt7 mb7">
+    <div class="logo-hr">
+      <div class="wing"></div>
+      <div class="logo"></div>
     </div>
-</header>
-{{/author}}
-
-{{!-- The main content area --}}
-<main id="site-main" class="site-main outer" role="main">
-    <div class="inner">
-
-        <div class="post-feed">
-            {{#foreach posts}}
-
-                {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-                {{> "post-card"}}
-
-            {{/foreach}}
-        </div>
-
-    </div>
-</main>
+  </div>
+</div>

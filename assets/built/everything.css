@@ -69,6 +69,9 @@ to each other and flow around one another. Most of the Layout rules will happen 
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased; }
 
+.darkmode * {
+  color: white; }
+
 html {
   background-color: #eef3f4;
   /*background-color: white;*/ }
@@ -332,7 +335,7 @@ hr {
 .site-footer {
   display: block;
   width: 100%;
-  background: black;
+  background: #111;
   padding: 2rem; }
 
 .site-footer p,
@@ -6755,31 +6758,36 @@ body {
   font-size: 2.25rem;
   line-height: 2.25rem;
   margin-bottom: 0.25em;
-  margin-top: 1em; }
+  margin-top: 1em;
+  display: inline-block; }
 
 .text-block h2 {
   font-size: 1.5rem;
   line-height: 2rem;
   margin-bottom: 0.25em;
-  margin-top: 1em; }
+  margin-top: 1em;
+  display: inline-block; }
 
 .text-block h3 {
   font-size: 1.25rem;
   line-height: 2rem;
   margin-bottom: 0.25em;
-  margin-top: 1em; }
+  margin-top: 1em;
+  display: inline-block; }
 
 .text-block h4 {
   font-size: 1.125rem;
   line-height: 1.5rem;
   margin-bottom: 0.25em;
-  margin-top: 1em; }
+  margin-top: 1em;
+  display: inline-block; }
 
 .text-block h5 {
   font-size: 1.125rem;
   line-height: 1.5rem;
   margin-bottom: 0.25em;
-  margin-top: 1em; }
+  margin-top: 1em;
+  display: inline-block; }
 
 .text-block h1, .text-block h2, .text-block h3 {
   font-weight: 900;
@@ -6952,6 +6960,9 @@ body {
 .supercontainer.white-bg {
   background-color: white; }
 
+.darkmode, .darkmode .supercontainer {
+  background-color: black; }
+
 .new-grid-container, .ng-c {
   display: block;
   position: relative;
@@ -7011,7 +7022,7 @@ body {
   box-sizing: border-box;
   padding: 0px 32px; }
 
-@media (--breakpoint-new-not-small) {
+@media (min-width: 37.5em) {
   /* -ns */
   .new-grid-1-column-ns, .ng-1c-ns {
     max-width: 16.66666%; }
@@ -7069,7 +7080,7 @@ body {
   column-count: 1;
   column-gap: 0px; }
 
-@media (--breakpoint-new-not-small) {
+@media (min-width: 37.5em) {
   /* -ns */
   .columned-text-3-ns {
     column-count: 3;
@@ -7113,6 +7124,9 @@ body {
   font-weight: 500;
   clear: both; }
 
+.darkmode .standard-text, .darkmode .standard-text * {
+  color: white; }
+
 .standard-text p {
   margin-top: 0px;
   margin-bottom: 32px; }
@@ -7153,6 +7167,17 @@ body {
   font-style: italic;
   font-family: 'PlayfairDisplay-Black', Arial, serif;
   color: var(--off-black); }
+
+.darkmode .header-text em {
+  color: white; }
+
+@media (max-width: 37.5em) {
+  .header-text, .header-text a {
+    font-size: 32px;
+    line-height: 32px; }
+  .header-text.large {
+    font-size: 36px;
+    line-height: 36px; } }
 
 /* Vertibar Stuff */
 .vertibar {
@@ -7453,6 +7478,10 @@ img.portfolio.unsullied {
   height: 64px;
   background-color: white; }
 
+.darkmode .logo-hr .logo {
+  background-color: black;
+  border-color: black; }
+
 .logo-hr .wing {
   height: 6px;
   width: 100%;
@@ -7530,7 +7559,7 @@ img.portfolio.unsullied {
   margin: 0px;
   max-width: 100%; }
 
-@media (--breakpoint-new-not-small) {
+@media (min-width: 37.5em) {
   .page-designportfolio .text-block figure {
     margin: 32px auto 16px; }
   .page-designportfolio .text-block figure + p {
@@ -7593,7 +7622,7 @@ img.portfolio.unsullied {
 /* Post styles */
 /* feature image */
 .post_feature-image {
-  max-width: 1600px;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -7690,3 +7719,47 @@ img.portfolio.unsullied {
     float: none;
     font-size: 60px;
     line-height: 60px; } }
+
+/* Author stuff */
+.author-profile-image {
+  border-radius: 50px;
+  max-width: 100px;
+  float: left;
+  margin-right: 16px; }
+
+.author-name {
+  font-size: 2em;
+  line-height: 2rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 0.125rem;
+  margin-top: 1rem; }
+
+.author-subname {
+  font-size: 1.5em;
+  line-height: 2rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem; }
+
+.author-bio {
+  font-size: 1.125em;
+  line-height: 1.5rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 0.5rem; }
+
+.author-meta {
+  font-size: 0.875em;
+  line-height: 1.5rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 0.5rem; }
+
+/* error pages */
+.error-message {
+  display: block;
+  width: 450px;
+  margin: 0 auto;
+  text-align: center; }

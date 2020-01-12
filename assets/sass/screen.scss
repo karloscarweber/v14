@@ -40,7 +40,7 @@
 /* feature image */
 
 .post_feature-image {
-  max-width: 1600px;
+  max-width: 1280px;
   margin-left:auto;
   margin-right:auto;
   width:100%;
@@ -147,4 +147,54 @@
       line-height: 60px;
     }
   }
+}
+
+
+/* Author stuff */
+.author-block {
+
+}
+.author-profile-image {
+  border-radius: 50px;
+  max-width: 100px;
+  float: left;
+  margin-right: 16px;
+}
+.author-name {
+  font-size: 2em;
+  line-height: 2rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 0.125rem;
+  margin-top: 1rem;
+}
+.author-subname {
+  font-size: 1.5em;
+  line-height: 2rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+.author-bio {
+  font-size: 1.125em;
+  line-height: 1.5rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+.author-meta {
+  font-size: 0.875em;
+  line-height: 1.5rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+/* error pages */
+.error-message {
+  display: block;
+  width: 450px;
+  margin: 0 auto;
+  text-align: center;
 }

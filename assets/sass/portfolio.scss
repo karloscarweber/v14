@@ -27,6 +27,8 @@
 .supercontainer.yellow-bg {background-color:var(--yellow-bg)}
 .supercontainer.green-bg {background-color:var(--green-bg)}
 .supercontainer.white-bg {background-color: white}
+.darkmode, .darkmode .supercontainer {background-color: black}
+
 
 .new-grid-container, .ng-c {
   display:block;
@@ -94,7 +96,7 @@
   padding:0px 32px
 }
 
-@media (--breakpoint-new-not-small) {/* -ns */
+@media (min-width: 37.5em) {/* -ns */
   .new-grid-1-column-ns, .ng-1c-ns {max-width:16.66666%}
   .new-grid-2-column-ns, .ng-2c-ns {max-width:33.33333%}
   .new-grid-3-column-ns, .ng-3c-ns {max-width:50%}
@@ -132,7 +134,7 @@
   column-count:1;
   column-gap:0px;
 }
-@media (--breakpoint-new-not-small) {/* -ns */
+@media (min-width: 37.5em) {/* -ns */
   .columned-text-3-ns {
     column-count:3;
     column-gap:64px;
@@ -183,6 +185,9 @@
   font-weight:500;
   clear:both;
 }
+.darkmode .standard-text, .darkmode .standard-text * {
+  color:white;
+}
 .standard-text p {
   margin-top:0px;
   margin-bottom: 32px;
@@ -221,6 +226,19 @@
   font-style: italic;
   font-family: 'PlayfairDisplay-Black', Arial, serif;
   color:var(--off-black);
+}
+.darkmode .header-text em {
+  color:white;
+}
+@media (max-width: 37.5em) {
+  .header-text, .header-text a {
+    font-size:32px;
+    line-height:32px;
+  }
+  .header-text.large {
+    font-size:36px;
+    line-height: 36px;
+  }
 }
 
 /* Vertibar Stuff */
@@ -416,6 +434,10 @@ img.portfolio.unsullied {z-index: 1001;}
   height: 64px;
   background-color:white;
 }
+.darkmode .logo-hr .logo {
+  background-color: black;
+  border-color:black;
+}
 .logo-hr .wing {
   height: 6px;
   width: 100%;
@@ -504,7 +526,7 @@ img.portfolio.unsullied {z-index: 1001;}
   max-width: 100%;
 }
 
-@media (--breakpoint-new-not-small) {
+@media (min-width: 37.5em) {
   .page-designportfolio .text-block figure {
     margin: 32px auto 16px;
   }

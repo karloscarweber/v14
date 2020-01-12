@@ -275,11 +275,11 @@ body {
 @mixin lh-16   { line-height: 1rem; }      .lh-16     { @include lh-16; } // 16px
 @mixin lh-14   { line-height: 0.875rem; }  .lh-14     { @include lh-14; } // 14px
 
-.text-block h1 { @include f-36; @include lh-36; margin-bottom: 0.25em; margin-top: 1em; }
-.text-block h2 { @include f-24; @include lh-32; margin-bottom: 0.25em; margin-top: 1em; }
-.text-block h3 { @include f-20; @include lh-32; margin-bottom: 0.25em; margin-top: 1em; }
-.text-block h4 { @include f-18; @include lh-24; margin-bottom: 0.25em; margin-top: 1em; }
-.text-block h5 { @include f-18; @include lh-24; margin-bottom: 0.25em; margin-top: 1em; }
+.text-block h1 { @include f-36; @include lh-36; margin-bottom: 0.25em; margin-top: 1em; display: inline-block; }
+.text-block h2 { @include f-24; @include lh-32; margin-bottom: 0.25em; margin-top: 1em; display: inline-block; }
+.text-block h3 { @include f-20; @include lh-32; margin-bottom: 0.25em; margin-top: 1em; display: inline-block; }
+.text-block h4 { @include f-18; @include lh-24; margin-bottom: 0.25em; margin-top: 1em; display: inline-block; }
+.text-block h5 { @include f-18; @include lh-24; margin-bottom: 0.25em; margin-top: 1em; display: inline-block; }
 .text-block h1, .text-block h2, .text-block h3 { font-weight: 900; text-transform: uppercase;}
 .text-block h4, .text-block h5 { font-weight: 700; }
 

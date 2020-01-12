@@ -10,25 +10,24 @@ into the {body} of the default.hbs template --}}
   {{#if feature_image}}
     <img class="post_feature-image mt4" src="{{feature_image}}" alt="">
   {{/if}}
-    <div class="ng-c clearfix">
-      <div class="ng-6c mt5">
-        <article class="text-block {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
+  <div class="ng-c clearfix">
+    <div class="ng-6c mt5">
+      <article class="text-block {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
 
-          <h1>{{title}}</h1>
+        <h1>{{title}}</h1>
 
-          {{content}}
-        </article>
-      </div>
-      <div class="ng-6c mt7 mb7">
-        <div class="logo-hr">
-          <div class="wing"></div>
-          <div class="logo"></div>
-        </div>
+        {{content}}
+      </article>
+    </div>
+    <div class="ng-6c mt7 mb7">
+      <div class="logo-hr">
+        <div class="wing"></div>
+        <div class="logo"></div>
       </div>
     </div>
+  </div>
+  {{/post}}
 
-
-    {{/post}}
 </div>
 
 {{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}

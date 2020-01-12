@@ -2,63 +2,60 @@
 {{!-- The tag above means: insert everything in this file
 into the {body} of the default.hbs template --}}
 
-<div class="supercontainer green-bg cf">
-  <!-- <div class="vertibar mainvertibar parallaxy-animate" parallaxy-options='{"multiplier":"0.15", "direction":"down", "positionType": "absolute", "rotation": "rotate(-45deg)"}'>
-    <div class="top"></div>
-    <div class="bottom"></div>
-  </div> -->
-  <div class="ng-c clearfix mt5">
+<!-- <div class="vertibar mainvertibar parallaxy-animate" parallaxy-options='{"multiplier":"0.15", "direction":"down", "positionType": "absolute", "rotation": "rotate(-45deg)"}'>
+  <div class="top"></div>
+  <div class="bottom"></div>
+</div> -->
+<div class="ng-c clearfix mt5">
 
 
-    <!-- Site Nav -->
-    <!-- We add the site nave directly to this page instead of an include because it's column widths are different. -->
-    <div class="site-nav-container ng-6c ng-6c-m ng-2c-l mt3 fr">
-      <a href="/"><h2 class="logo-text">index</h2></a>
-      <nav class="site-nav">
-        {{#if @blog.navigation}}
-            {{navigation}}
-        {{/if}}
-      </nav>
-    </div>
-    <!-- Site Nav -->
+  <!-- Site Nav -->
+  <!-- We add the site nave directly to this page instead of an include because it's column widths are different. -->
+  <div class="site-nav-container ng-6c ng-6c-m ng-2c-l mt3 fr">
+    <nav class="site-nav">
+      {{#if @blog.navigation}}
+          {{navigation}}
+      {{/if}}
+    </nav>
+  </div>
+  <!-- Site Nav -->
 
-    <div class="ng-6c ng-4c-m ng-4c-l fl">
-      <h2 class="header-text green mb6">I’m a web developer & designer living in salt lake city making <em>ridiculously</em> great websites.</h2>
-    </div>
-
-    <div class="ng-6c fl columned-text-1 columned-text-2-m columned-text-3-l standard-text mb6">
-      <p>Hi,<br>
-
-      <p>My name is Karl Oscar Weber, I make websites. I live in Salt Lake City with my wife and our 3 little kids, It's all great.</p>
-
-      <p>I aspire to make astonishing Art, Design, and Websites. That's about it. No for reals. Let me explain.</p>
-
-      <p>A few years ago there was this "Magazine" called GUM that came out and it was fantastic, So fantastic that they made a GUM 2 which was also a success. When I say it was a success, I mean that it was the most creative and interesting thing I had ever seen. Gum wasn't just a magazine, it wasn't even sized like a magazine, it was the size of a cracker jack box, and actually came in a box. There was a slot at the bottom for dispensing Gum balls, and up top you could pull out the actual magazine. There were some gummy candy, art prints in postcard form, and an activity book, Yes, an activity book, featuring Nancy Sinatra. It was colorful and creative and filled with Art projects from all sorts of artists. </p>
-
-      <p>Anyways the point I'm getting to was that it was great, Ridiculously great, and ever since I had GUM Magazine I've wanted to make great art. I'm doing that now.</p>
-
-      <p>Companies, Charities, Non-Profits, The corner restaurant, your accountant, your favorite band, when we get down to it we all just want to have a positive impact in the world. To make something better than when we found it. The stuff that REALLY REALLY makes you stand up and pay attention is beautiful, creative, and original. So that's why I pay my bills by making art & Design for other people so that they can get their message across. </p>
-
-      <p>It's simple, do your best, and tell people about it. If you need help with that, please <a href="mailto:me@kow.fm" target="_blank">send me an email</a>. If you'd just like to say Hi, also please <a href="mailto:me@kow.fm" target="_blank">send me an email</a>. Either way, I'm friendly.</p>
-    </div>
+  <div class="ng-6c ng-4c-m ng-4c-l fl">
+    <h2 class="header-text green mb6">I’m a web developer & designer living in salt lake city making <em>ridiculously</em> great websites.</h2>
   </div>
 
-  <div class="ng-c clearfix">
-    <div class="ng-6c mt5">
-      <em><h1 class="header-text large green">Stories</h1></em>
-      {{#foreach posts}}
+  <div class="ng-6c fl columned-text-1 columned-text-2-m columned-text-3-l standard-text mb6">
+    <p>Hi,<br>
 
-          {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-          {{> "post-card"}}
+    <p>My name is Karl Oscar Weber, I make websites. I live in Salt Lake City with my wife and our 3 little kids, It's all great.</p>
 
-      {{/foreach}}
-      {{pagination}}
-    </div>
-    <div class="ng-6c mt7 mb7">
-      <div class="logo-hr">
-        <div class="wing"></div>
-        <div class="logo"></div>
-      </div>
+    <p>I aspire to make astonishing Art, Design, and Websites. That's about it. No for reals. Let me explain.</p>
+
+    <p>A few years ago there was this "Magazine" called GUM that came out and it was fantastic, So fantastic that they made a GUM 2 which was also a success. When I say it was a success, I mean that it was the most creative and interesting thing I had ever seen. Gum wasn't just a magazine, it wasn't even sized like a magazine, it was the size of a cracker jack box, and actually came in a box. There was a slot at the bottom for dispensing Gum balls, and up top you could pull out the actual magazine. There were some gummy candy, art prints in postcard form, and an activity book, Yes, an activity book, featuring Nancy Sinatra. It was colorful and creative and filled with Art projects from all sorts of artists. </p>
+
+    <p>Anyways the point I'm getting to was that it was great, Ridiculously great, and ever since I had GUM Magazine I've wanted to make great art. I'm doing that now.</p>
+
+    <p>Companies, Charities, Non-Profits, The corner restaurant, your accountant, your favorite band, when we get down to it we all just want to have a positive impact in the world. To make something better than when we found it. The stuff that REALLY REALLY makes you stand up and pay attention is beautiful, creative, and original. So that's why I pay my bills by making art & Design for other people so that they can get their message across. </p>
+
+    <p>It's simple, do your best, and tell people about it. If you need help with that, please <a href="mailto:me@kow.fm" target="_blank">send me an email</a>. If you'd just like to say Hi, also please <a href="mailto:me@kow.fm" target="_blank">send me an email</a>. Either way, I'm friendly.</p>
+  </div>
+</div>
+
+<div class="ng-c clearfix">
+  <div class="ng-6c mt5">
+    <em><h1 class="header-text large green">Stories</h1></em>
+    {{#foreach posts}}
+
+        {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+        {{> "post-card"}}
+
+    {{/foreach}}
+    {{pagination}}
+  </div>
+  <div class="ng-6c mt7 mb7">
+    <div class="logo-hr">
+      <div class="wing"></div>
+      <div class="logo"></div>
     </div>
   </div>
 </div>

@@ -33,6 +33,9 @@ to each other and flow around one another. Most of the Layout rules will happen 
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
 }
+.darkmode * {
+  color:white;
+}
 html {
   background-color: #eef3f4;
   /*background-color: white;*/
@@ -318,7 +321,7 @@ hr {
 .site-footer {
   display: block;
   width: 100%;
-  background: black;
+  background: #111;
   padding: 2rem;
 }
 
