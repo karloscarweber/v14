@@ -2,7 +2,7 @@
   "name": "kowfm-v14-decker",
   "description": "The Fourtheenth version of kowfm, Decker.",
   "demo": "https://kow.fm",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "engines": {
     "ghost": ">=1.19.0",
     "ghost-api": "v3"
