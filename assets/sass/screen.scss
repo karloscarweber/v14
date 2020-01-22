@@ -159,6 +159,9 @@
   max-width: 100px;
   float: left;
   margin-right: 16px;
+  &.small {
+    max-width: 50px;
+  }
 }
 .author-name {
   font-size: 2em;
@@ -189,6 +192,13 @@
   font-weight: 500;
   display: inline-block;
   margin-bottom: 0.5rem;
+}
+.author-list {
+  list-style-type: none;
+  padding: 0;
+}
+.lesson-card-byline-content {
+  line-height: 50px;
 }
 
 /* error pages */

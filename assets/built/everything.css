@@ -6790,7 +6790,7 @@ body {
   display: inline-block; }
 
 .text-block h1, .text-block h2, .text-block h3 {
-  font-weight: 900;
+  font-weight: 100;
   text-transform: uppercase; }
 
 .text-block h4, .text-block h5 {
@@ -6819,6 +6819,11 @@ body {
   font-style: italic;
   color: var(--neon-pink); }
 
+.text-block ol {
+  margin-bottom: 32px;
+  margin-top: 0.5em;
+  margin-block-start: 0.5em; }
+
 .text-block li {
   margin-bottom: 0.875rem; }
 
@@ -6828,9 +6833,8 @@ body {
 .text-block em {
   font-style: italic; }
 
-.text-block img {
+.text-block > img {
   margin: 0px auto 32px;
-  max-width: 640px;
   width: 100%; }
 
 .text-block code {
@@ -6861,15 +6865,14 @@ body {
     font-size: 1.5rem;
     line-height: 2rem;
     margin: 32px 0px; }
-  .text-block img {
+  .text-block > img {
     margin: 0px auto 32px;
-    max-width: 640px;
     width: 100%; }
   .page-designportfolio .text-block figure {
     margin: 32px auto 16px; }
   .page-designportfolio .text-block figure + p {
     margin-top: 0px; }
-  .page-designportfolio .text-block img {
+  .page-designportfolio .text-block > img {
     margin: 0px;
     max-width: 100%; } }
 
@@ -7726,6 +7729,8 @@ img.portfolio.unsullied {
   max-width: 100px;
   float: left;
   margin-right: 16px; }
+  .author-profile-image.small {
+    max-width: 50px; }
 
 .author-name {
   font-size: 2em;
@@ -7756,6 +7761,13 @@ img.portfolio.unsullied {
   font-weight: 500;
   display: inline-block;
   margin-bottom: 0.5rem; }
+
+.author-list {
+  list-style-type: none;
+  padding: 0; }
+
+.lesson-card-byline-content {
+  line-height: 50px; }
 
 /* error pages */
 .error-message {

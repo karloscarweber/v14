@@ -7,23 +7,49 @@ into the {body} of the default.hbs template --}}
   {{> "site-nav"}}
 
   {{#post}}
-  {{#if feature_image}}
-    <img class="post_feature-image mt4" src="{{feature_image}}" alt="">
-  {{/if}}
-  <div class="ng-c clearfix">
+
+  <div class="ng-c clearfix mb6">
     <div class="ng-6c mt5">
       <article class="text-block {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
 
         <h1>{{title}}</h1>
 
+        <br />
+          <span class="date-time" datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMMM D YYYY"}}</span>, <span>Tags: {{#if tags}}
+              {{#foreach tags}}<a href="{{url}}" title={{name}} class="tag tag-{{id}} {{slug}}">{{name}}</a> {{/foreach}}
+            {{/if}}</span>
+            <div class="mb4"></div>
+            {{#if feature_image}}
+              <img class="post_feature-image mt4" src="{{feature_image}}" alt="">
+            {{/if}}
+
         {{content}}
+
+        <div class="ng-6c mt4 mb4">
+          <div class="logo-hr">
+            <div class="wing"></div>
+            <div class="logo"></div>
+          </div>
+        </div>
+
+        <ul class="author-list">
+            {{#foreach authors}}
+            <li class="author-list-item">
+
+                {{#if profile_image}}
+                <a href="{{url}}" class="static-avatar">
+                    <img class="author-profile-image small" src="{{img_url profile_image size="xs"}}" alt="{{name}}" />
+                </a>
+                {{else}}
+                <a href="{{url}}" class="static-avatar author-profile-image">{{> "icons/avatar"}}</a>
+                {{/if}}
+            </li>
+            {{/foreach}}
+        </ul>
+        <div class="lesson-card-byline-content">
+            <span>Authors: {{authors}}</span>
+        </div>
       </article>
-    </div>
-    <div class="ng-6c mt7 mb7">
-      <div class="logo-hr">
-        <div class="wing"></div>
-        <div class="logo"></div>
-      </div>
     </div>
   </div>
   {{/post}}

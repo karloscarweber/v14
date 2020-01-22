@@ -6,9 +6,11 @@
           <img src="{{feature_image}}" alt="">
       </a>
   {{/if}}
--->
-    <!-- <span class="date-time" datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMMM D YYYY"}}</span> -->
+  -->
+  <br />
+  <span class="date-time" datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMMM D YYYY"}}</span>, <span>Tags: {{#if tags}}
+      {{#foreach tags}}<a href="{{url}}" title={{name}} class="tag tag-{{id}} {{slug}}">{{name}}</a> {{/foreach}}
+    {{/if}}</span>
     <p class="fw5 f3 lh-copy">{{excerpt words="16"}}<a class="content-link" href="{{url}}">Read more</a></p>
-
     <div class="clearfix"></div>
 </article>

@@ -280,7 +280,7 @@ body {
 .text-block h3 { @include f-20; @include lh-32; margin-bottom: 0.25em; margin-top: 1em; display: inline-block; }
 .text-block h4 { @include f-18; @include lh-24; margin-bottom: 0.25em; margin-top: 1em; display: inline-block; }
 .text-block h5 { @include f-18; @include lh-24; margin-bottom: 0.25em; margin-top: 1em; display: inline-block; }
-.text-block h1, .text-block h2, .text-block h3 { font-weight: 900; text-transform: uppercase;}
+.text-block h1, .text-block h2, .text-block h3 { font-weight: 100; text-transform: uppercase;}
 .text-block h4, .text-block h5 { font-weight: 700; }
 
 .text-block { @include tf-greycliff; color: #333; }
@@ -305,6 +305,11 @@ body {
   color: var(--neon-pink);
 }
 // .text-block a { @include f-24; @include lh-36; max-width: 736px; }
+.text-block ol {
+  margin-bottom: 32px;
+  margin-top: 0.5em;
+  margin-block-start: 0.5em;
+}
 .text-block li {
   margin-bottom: 0.875rem;
 }
@@ -315,9 +320,8 @@ body {
   font-style: italic;
 }
 
-.text-block img {
+.text-block > img {
   margin: 0px auto 32px;
-  max-width: 640px;
   width: 100%;
 }
 .text-block code {
@@ -344,9 +348,8 @@ body {
     @include f-24; @include lh-32;
     margin: 32px 0px;
   }
-  .text-block img {
+  .text-block > img {
     margin: 0px auto 32px;
-    max-width: 640px;
     width: 100%;
   }
 
@@ -358,7 +361,7 @@ body {
     margin-top: 0px;
   }
 
-  .page-designportfolio .text-block img {
+  .page-designportfolio .text-block > img {
     margin: 0px;
     max-width: 100%;
   }
